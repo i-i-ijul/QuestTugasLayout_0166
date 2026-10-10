@@ -25,5 +25,9 @@ fun Tugas(modifier: Modifier){
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold
         )
+        Text(
+            stringResource(R.string.univ),
+            fontSize = 20.sp
+        )
     }
 }
