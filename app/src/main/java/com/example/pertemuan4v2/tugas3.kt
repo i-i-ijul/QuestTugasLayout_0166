@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 
-fun Tugas(modifier: Modifier){
+fun Tugas(modifier: Modifier) {
     Column(
         modifier = Modifier.padding(top = 100.dp)
             .fillMaxSize(),
@@ -68,6 +68,45 @@ fun Tugas(modifier: Modifier){
                     )
                     Text(
                         stringResource(R.string.alamat1),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(1f)
+                .padding(10.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama2),
+                        fontSize = 25.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nohp1),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat2),
                         fontSize = 15.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
