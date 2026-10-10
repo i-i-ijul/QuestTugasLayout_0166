@@ -153,5 +153,44 @@ fun Tugas(modifier: Modifier) {
                 }
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(1f)
+                .padding(10.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama4),
+                        fontSize = 25.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nohp3),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat4),
+                        fontSize = 15.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
     }
 }
