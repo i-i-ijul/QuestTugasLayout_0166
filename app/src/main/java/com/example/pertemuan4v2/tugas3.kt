@@ -50,15 +50,20 @@ fun Tugas(modifier: Modifier) {
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(R.drawable.oip)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val gambarkiri = painterResource(R.drawable.oip)
                 Image(
-                    painter = gambar,
+                    painter = gambarkiri,
                     contentDescription = null,
                     modifier = Modifier.size(90.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column() {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
                     Text(
                         stringResource(R.string.nama1),
                         fontSize = 25.sp,
@@ -73,6 +78,12 @@ fun Tugas(modifier: Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
+                val gambarkanan = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambarkanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
             }
         }
         Card(
@@ -83,15 +94,20 @@ fun Tugas(modifier: Modifier) {
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(R.drawable.oip)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val gambarkiri = painterResource(R.drawable.oip)
                 Image(
-                    painter = gambar,
+                    painter = gambarkiri,
                     contentDescription = null,
                     modifier = Modifier.size(90.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column() {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
                     Text(
                         stringResource(R.string.nama2),
                         fontSize = 25.sp,
@@ -112,6 +128,12 @@ fun Tugas(modifier: Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
+                val gambarkanan = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambarkanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
             }
         }
         Card(
@@ -122,15 +144,20 @@ fun Tugas(modifier: Modifier) {
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(R.drawable.oip)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val gambarkiri = painterResource(R.drawable.oip)
                 Image(
-                    painter = gambar,
+                    painter = gambarkiri,
                     contentDescription = null,
                     modifier = Modifier.size(90.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column() {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
                     Text(
                         stringResource(R.string.nama3),
                         fontSize = 25.sp,
@@ -151,6 +178,12 @@ fun Tugas(modifier: Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
+                val gambarkanan = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambarkanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
             }
         }
         Card(
@@ -161,15 +194,20 @@ fun Tugas(modifier: Modifier) {
                 containerColor = Color.DarkGray
             )
         ) {
-            Row() {
-                val gambar = painterResource(R.drawable.oip)
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                val gambarkiri = painterResource(R.drawable.oip)
                 Image(
-                    painter = gambar,
+                    painter = gambarkiri,
                     contentDescription = null,
                     modifier = Modifier.size(90.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column() {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
                     Text(
                         stringResource(R.string.nama4),
                         fontSize = 25.sp,
@@ -190,6 +228,12 @@ fun Tugas(modifier: Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
+                val gambarkanan = painterResource(R.drawable.oip)
+                Image(
+                    painter = gambarkanan,
+                    contentDescription = null,
+                    modifier = Modifier.size(90.dp).padding(5.dp)
+                )
             }
         }
     }
